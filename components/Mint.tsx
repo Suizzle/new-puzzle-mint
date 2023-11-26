@@ -15,9 +15,9 @@ const Mint = () => {
           transactionBlock.moveCall({
             target: `${ETHOS_EXAMPLE_CONTRACT}::ethos_example_nft::mint_to_sender`,
             arguments: [
-              transactionBlock.pure("Ethos Example NFT"),
-              transactionBlock.pure("A sample NFT from Ethos Wallet."),
-              transactionBlock.pure("https://ethoswallet.xyz/assets/images/ethos-email-logo.png"),
+              transactionBlock.pure("Narwhal 14"),
+              transactionBlock.pure("The 14th Narwhal"),
+              transactionBlock.pure("https://moveecosystem.com/wp-content/uploads/2023/11/cropped-HEAD_14.png"),
             ]
           })
     
@@ -67,7 +67,7 @@ const Mint = () => {
                 className="mx-auto px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
                 onClick={mint}
             >
-                Mint an NFT
+                Mint NFT
             </button>
         </div>
     )

@@ -1,6 +1,9 @@
 import type { NextPage } from "next";
 import { SignInButton, ethos } from "ethos-connect";
 import { Disconnect, Fund, Mint, WalletActions } from "../components";
+import Script from 'next/script';
+import Image from 'next/image';
+import { useCallback, useEffect, useState } from "react";
 
 const Home: NextPage = () => {
   const { status, wallet } = ethos.useWallet();
@@ -17,21 +20,28 @@ const Home: NextPage = () => {
         ) : (
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-2">
-              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
-                Connected to wallet
+              <h2 id="headline" className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+                Solve the Puzzle to Mint
               </h2>
-              <code>{wallet.address}</code>
-              <div className="place-content-center text-base font-medium text-ethos-primary space-x-1">
-                <div>
-                  Wallet balance: <code>{wallet.contents?.suiBalance.toString()}</code>{" "}
-                  Mist
-                </div>
-                <div className="text-xs text-gray-500">
-                  (1 sui is 10^9 Mist)
-                </div>
-              </div>
             </div>
             <div className="flex flex-col gap-4">
+            <div id="canvas-container">
+                <div id="sound-canvas">
+                </div>
+                <div id="overlay-image">
+                  <Image 
+                    id="validated-canvas-overlay" 
+                    src="/HEAD_14.png"
+                    width={444}
+                    height={444}
+                    alt="skull puzzle"
+                  /> 
+                </div>
+              </div>
+  
+              <Mint/>
+
+
               First, fund this wallet from the Sui faucet:
               <Fund />
               then
