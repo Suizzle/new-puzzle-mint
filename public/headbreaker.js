@@ -2,6 +2,7 @@ var headbreaker=function(t){var e={};function i(r){if(e[r])return e[r].exports;v
 //# sourceMappingURL=headbreaker.js.map
 
 docReady(function() { 
+  var backgroundSound = new Audio('../lofi.mp3');
   var beginSound = new Audio('../spell_swish.wav');
   var ahaSound = new Audio('../spell_swish.wav');
   var endSoundGorilla = new Audio('../trumpet_fanfare.mp3');
@@ -24,7 +25,8 @@ docReady(function() {
       insertsGenerator: headbreaker.generators.random
     });
     sound.shuffle();
-    await sound.draw();  
+    await sound.draw(); 
+    backgroundSound.play(); 
     beginSound.play();
     sound.attachSolvedValidator();
     sound.onValid(() => {

@@ -1,7 +1,7 @@
-import { createFactory, useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { ethos, TransactionBlock } from 'ethos-connect'
 import { SuccessMessage } from '.';
-import { ETHOS_EXAMPLE_CONTRACT } from '../lib/constants';
+import { MAINNET_NFT_CONTRACT } from '../lib/constants';
 
 const Mint = () => {
     const { wallet } = ethos.useWallet();
@@ -13,7 +13,7 @@ const Mint = () => {
         try {
           const transactionBlock = new TransactionBlock();
           transactionBlock.moveCall({
-            target: `${ETHOS_EXAMPLE_CONTRACT}::ethos_example_nft::mint_to_sender`,
+            target: `${MAINNET_NFT_CONTRACT}::ethos_example_nft::mint_to_sender`,
             arguments: [
               transactionBlock.pure("Lindquist"),
               transactionBlock.pure("Lindquist's Punk as an inSui NFT"),
@@ -54,12 +54,12 @@ const Mint = () => {
             {nftObjectId && (
                 <SuccessMessage reset={reset}>
                     <a 
-                        href={`https://explorer.sui.io/objects/${nftObjectId}?network=testnet`}
+                        href={`https://explorer.sui.io/objects/${nftObjectId}?network=mainnet`}
                         target="_blank" 
                         rel="noreferrer"
                         className='underline font-blue-600' 
                     >
-                        View Your NFT on the TestNet Explorer 
+                        View Your NFT on the Sui Explorer 
                     </a>
                 </SuccessMessage>
             )}

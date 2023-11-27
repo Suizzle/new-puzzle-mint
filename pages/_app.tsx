@@ -11,18 +11,18 @@ function MyApp({ Component, pageProps }: AppProps) {
     apiKey: process.env.NEXT_PUBLIC_ETHOS_API_KEY,
     preferredWallets: ['Ethos Wallet'],
     network: NETWORK,
-    chain: Chain.SUI_TESTNET
+    chain: Chain.SUI_MAINNET
   };
 
   return (
     <EthosConnectProvider
       ethosConfiguration={ethosConfiguration}
       dappName="Lindquist's Punk as an inSui NFT"
-      dappIcon="../mint.ico"
-      connectMessage="Connect to solve and mint!"
+      dappIcon="../lindquist.ico"
+      connectMessage="Connect, solve and mint!"
     >
       <Head>
-        <title>Lindquist Punk inSui</title>
+        <title>Lindquist's Punk inSui</title>
         <link rel="shortcut icon" href="../lindquist.ico" />
       </Head>
       <Component {...pageProps} />

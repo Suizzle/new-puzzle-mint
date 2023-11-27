@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   const { status, wallet } = ethos.useWallet();
 
   return (
-    <div className="flex justify-between items-start">
+    <div id="main-container" className="flex justify-between items-start">
       <div className="p-12 flex-1">Status: {status}</div>
 
       <div className="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8 flex-6">

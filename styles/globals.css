@@ -62,14 +62,14 @@ a {
 }
 
 #main-container button {
-  background-color: #ffecbb;
-  color:black;
-  font-weight: bold;
+  background-color: #ffecbb!important;
+  color:black!important;
+  font-weight: bold!important;
 }
 #main-container button:disabled {
-  background-color: #ceb165;
-  color:black;
-  font-weight: bold;
+  background-color: #ceb165!important;
+  color:black!important;
+  font-weight: bold!important;
 }
 
 #main-container * {
