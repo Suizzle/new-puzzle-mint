@@ -17,12 +17,13 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <EthosConnectProvider
       ethosConfiguration={ethosConfiguration}
-      dappName="EthosConnect Example App"
-      dappIcon={<ExampleIcon />}
-      connectMessage="Your connect message goes here!"
+      dappName="Lindquist's Punk as an inSui NFT"
+      dappIcon="../mint.ico"
+      connectMessage="Connect to solve and mint!"
     >
       <Head>
-        <title>Ethos Connect Example App</title>
+        <title>Lindquist Punk inSui</title>
+        <link rel="shortcut icon" href="../lindquist.ico" />
       </Head>
       <Component {...pageProps} />
     </EthosConnectProvider>

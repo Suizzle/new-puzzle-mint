@@ -31,7 +31,7 @@ const Home: NextPage = () => {
                 <div id="overlay-image">
                   <Image 
                     id="validated-canvas-overlay" 
-                    src="/HEAD_14.png"
+                    src="/lindquist.jpg"
                     width={444}
                     height={444}
                     alt="skull puzzle"
@@ -51,6 +51,7 @@ const Home: NextPage = () => {
               or
               <Disconnect />
             </div>
+            <Script src="../headbreaker.js"/>
           </div>
         )}
       </div>

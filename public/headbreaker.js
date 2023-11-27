@@ -6,7 +6,7 @@ docReady(function() {
   var ahaSound = new Audio('../spell_swish.wav');
   var endSoundGorilla = new Audio('../trumpet_fanfare.mp3');
   let berni = new Image();
-  berni.src = '/nextlight.jpg';
+  berni.src = './lindquist.jpg';
   berni.onload = async () => {
     document.getElementById('mint-button').disabled = true;
     const sound = new headbreaker.Canvas('sound-canvas', {
@@ -33,7 +33,7 @@ docReady(function() {
         endSoundGorilla.play();
         document.getElementById('overlay-image').setAttribute("class", "active");
         document.getElementById('mint-button').disabled = false;
-        document.getElementById('headline').innerHTML = "Congrats! Mint Now 🌻";
+        document.getElementById('headline').innerHTML = "Congrats! Mint Now";
         document.getElementById('sound-canvas').style.border = "none";
         document.getElementById('sound-canvas').style.background = "black";
       }, 50);

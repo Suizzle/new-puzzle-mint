@@ -8,6 +8,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color:white;
+  background-color:#ffda03;   
 }
 
 a {
@@ -25,6 +27,51 @@ a {
   }
   body {
     color: white;
-    background: black;
+    background-color: #ffda03;
   }
+}
+
+#sound-canvas {
+  border: solid white;
+  background:beige;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+#overlay-image {
+  position:absolute;
+  left:0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease-in-out;
+  z-index: 2;
+}
+
+#overlay-image.active {
+  opacity: 1;
+}
+
+#canvas-container {
+  position:relative!important;
+  width: 444px;
+  height: 444px;
+}
+
+#main-container button {
+  background-color: #ffecbb;
+  color:black;
+  font-weight: bold;
+}
+#main-container button:disabled {
+  background-color: #ceb165;
+  color:black;
+  font-weight: bold;
+}
+
+#main-container * {
+  font-family: "Dejavu Sans", Helvetica, sans-serif!important;
 }
