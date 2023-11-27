@@ -25,9 +25,9 @@ docReady(function() {
       insertsGenerator: headbreaker.generators.random
     });
     sound.shuffle();
-    await sound.draw(); 
-    backgroundSound.play(); 
-    beginSound.play();
+    await sound.draw();  
+    await beginSound.play();
+    backgroundSound.play();
     sound.attachSolvedValidator();
     sound.onValid(() => {
       console.log("puzzle-solved")
