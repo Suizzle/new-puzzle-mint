@@ -2,8 +2,8 @@ var headbreaker=function(t){var e={};function i(r){if(e[r])return e[r].exports;v
 //# sourceMappingURL=headbreaker.js.map
 
 docReady(function() { 
-  var backgroundSound = new Audio('../lofi.mp3');
-  var beginSound = new Audio('../spell_swish.wav');
+  var bgSound = new Audio('../bgm2.mp3');
+  bgSound.loop = true;
   var ahaSound = new Audio('../spell_swish.wav');
   var endSoundGorilla = new Audio('../trumpet_fanfare.mp3');
   let berni = new Image();
@@ -26,8 +26,7 @@ docReady(function() {
     });
     sound.shuffle();
     await sound.draw();  
-    await beginSound.play();
-    backgroundSound.play();
+    bgSound.play();
     sound.attachSolvedValidator();
     sound.onValid(() => {
       console.log("puzzle-solved")

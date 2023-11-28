@@ -40,14 +40,6 @@ const Home: NextPage = () => {
               </div>
   
               <Mint/>
-
-
-              First, fund this wallet from the Sui faucet:
-              <Fund />
-              then
-              <Mint />
-              or
-              <WalletActions />
               or
               <Disconnect />
             </div>
