@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   const { status, wallet } = ethos.useWallet();
 
   return (
-    <div id="main-container" className="flex justify-between items-start">
+    <div className="flex justify-between items-start">
       <div className="p-12 flex-1">Status: {status}</div>
 
       <div className="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8 flex-6">
@@ -18,7 +18,7 @@ const Home: NextPage = () => {
             Connect
           </SignInButton>
         ) : (
-          <div className="flex flex-col gap-6">
+          <div id="main-container" className="flex flex-col gap-6">
             <div className="flex flex-col gap-2">
               <h2 id="headline" className="text-3xl font-extrabold tracking-tight sm:text-4xl">
                 Solve the Puzzle to Mint

@@ -8,7 +8,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color:white;
+  color:rgb(7, 7, 7);
   background-color:#ffda03;   
 }
 
@@ -32,8 +32,8 @@ a {
 }
 
 #sound-canvas {
-  border: solid white;
-  background:beige;
+  border: none;
+  background:rgb(70, 70, 70);
   margin: 0;
   padding: 0;
   box-sizing: content-box;
@@ -53,6 +53,13 @@ a {
 
 #overlay-image.active {
   opacity: 1;
+}
+
+
+
+#headline {
+  color: rgb(7, 7, 7);
+  font-size:34px;
 }
 
 #canvas-container {
