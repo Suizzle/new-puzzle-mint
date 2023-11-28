@@ -1,7 +1,7 @@
 
 const ExampleIcon = () => {
     return (
-        <img src="../lindquist.jpg" />
+        <img src="../lindquest.jpg" />
     );
 }
 

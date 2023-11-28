@@ -7,7 +7,7 @@ docReady(function() {
   var ahaSound = new Audio('../spell_swish.wav');
   var endSoundGorilla = new Audio('../trumpet_fanfare.mp3');
   let berni = new Image();
-  berni.src = './lindquist.jpg';
+  berni.src = './lindquest.jpg';
   berni.onload = async () => {
     document.getElementById('mint-button').disabled = true;
     const sound = new headbreaker.Canvas('sound-canvas', {
