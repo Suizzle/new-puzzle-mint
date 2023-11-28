@@ -31,7 +31,7 @@ const Home: NextPage = () => {
                 <div id="overlay-image">
                   <Image 
                     id="validated-canvas-overlay" 
-                    src="/lindquest.jpg"
+                    src="/brisebois2.jpg"
                     width={444}
                     height={444}
                     alt="skull puzzle"
